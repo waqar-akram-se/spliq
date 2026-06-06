@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-violet: #6C5CE7;
+  --color-brand-lavender: #A29BFE;
+  --color-brand-teal: #00CEC9;
+  --color-brand-amber: #FDCB6E;
+  --color-brand-night: #0A0B14;
+  --color-brand-mist: #F0EFFE;
+  
+  --animate-gradient: gradient-pulse 8s ease infinite;
+}
+
+@keyframes gradient-pulse {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Custom scrollbar matching premium fintech aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0B14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1f38;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f315c;
+}
+
+/* Base custom classes */
+.glass-effect {
+  background: rgba(18, 19, 35, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-effect-bright {
+  background: rgba(108, 92, 231, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(162, 155, 254, 0.15);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFF 30%, #A29BFE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #00CEC9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

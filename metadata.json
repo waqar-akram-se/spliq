@@ -1,0 +1,6 @@
+{
+  "name": "Spliq",
+  "description": "Spliq - AI Expense Tracker, Family Budget Planner & Group Expense Manager. Track expenses through WhatsApp, manage family budgets, split group expenses, plan future goals, and receive AI-powered financial insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
